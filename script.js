@@ -1,7 +1,14 @@
-const button = document.querySelector('#btn');
+const openbtn = document.querySelector("#openbtn");
+const closebtn = document.querySelector("#closebtn");
+const sidebar = document.querySelector(".sidebar");
 
-button.addEventListener("click", 
+openbtn.addEventListener("click",
     function () {
-        button.style.backgroundColor = "green";
+        sidebar.classList.add("show");
     }
-); 
+);
+closebtn.addEventListener("click",
+    function () {
+        sidebar.classList.remove("show");
+    }
+);
